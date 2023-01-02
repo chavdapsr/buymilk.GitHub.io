@@ -1,65 +1,75 @@
-<?php
-
-session_start();
-include("config.php");
-
-if($_SERVER["REQUEST_METHOD"]=="POST"){
-  $username=mysqli_real_escape_string($db,$_POST['username']);
-  $password=mysqli_real_escape_string($db,$_POST['password']);
-
-  
-  $sql=" select * from web where username='$username' and password='$password'";
-
-  $result=mysqli_query($conn, $sql);
-  $row=mysqli_fetch_array($result, MYSQLI_ASSOC);
-  $active=$row['active'];
-  $count=mysqli_num_rows($result);
-
-  if($count==1)
-  {
-   $login_session("username");
-    $_SESSION['login_user']=$username;
-
-    header("location:welcome.php");
-    echo"<h1><center>login successful!</center></h1>";
-
-  }else
-  {
-    $error="your login name or password is invalid";
-  }
- exit();
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>log-in form</title>
-    <link rel="stylesheet" href="signin/css/style.css">
-</head>
+    <meta name="viewport" http-equiv="Content-Type" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/login.css">
+  </head>
 <body>
     <div class="box">
-        <form action="" method="post" name="login-form">
+        <br name="f1" action = "authentication.php" method="post" onsubmit = "return validation()" id="frmLogin" >
+        <div class="error-message"></div>
+
             <label for="username">Username</label><br>
-            <input type="text" name="username" id="username" placeholder="Enter Username" class="input-box">
-            <br><br>
-            <label for="password">Password</label><br>
-            <input type="password" name="password" id="password" placeholder="Enter Password" class="input-box"></br>
+            <input type="text" name="user" id="user" placeholder="Enter Username" class="input-box">
+         </br></br>
+            <label for="username">Password</label><br>
+            <input type="password" name="pass" id="pass" placeholder="Enter Password" class="input-box"></br>
             <div class="forget">
                 <label class="checkbox-label">
-                    <input type="checkbox">
-                    <span class="checkbox-custom "></span>
-                    <span class="label-text">Remember me</span>
+                    <input type="checkbox" name="remember" id="remember">
+                    <span class="checkbox-custom "> 
+                 </span>
+                    <span class="label-text"  for="remember-me">Remember me</span>
+                    
+                
                 </label>
                 <span class="fg">
-                   <a href="#"> Forget password?</a>
+                   <a href="forgetpass.php"> Forget password?</a>
                 </span>
             </div>
-            <button type="submit" class="btn" value="signing" name="signing"></button>
+            <button type="submit" class="btn" name=
+            "submit" id = "btn" value = "Login">Sign In</button>
         </form>
-           </div>
+        <span class="option">or sign in with</span>
+        <div class="social">
+            <div class="box-radius">
+                <img src="images/fb.png" alt="">
+            </div>
+            <div class="box-radius">
+                <img src="images/google.png" alt="">
+            </div>
+            <div class="box-radius">
+                <img src="images/linkedin.png" alt="">
+            </div>
+            <div class="box-radius">
+                <img src="images/twitter.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>  
 </body>
 </html>
