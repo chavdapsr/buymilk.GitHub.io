@@ -1,0 +1,151 @@
+﻿
+@media only screen and (max-width:480px)  {
+  .colored {
+     color:#fff;
+  }
+  h1{
+    font-size:medium;
+
+    }
+
+}
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background: #ecf0f3;
+  font-size:27px;
+}
+
+.wrapper{
+  max-width: 400px;
+  width: 100%;
+  height: 420px;
+  position: absolute;
+  background: #ecf0f3;
+
+}
+.container{
+  padding: 35px 40px;
+   margin: auto;
+    box-sizing: border-box;
+    margin-top: 100px;
+    height:500px;
+    padding: 50px 40px;
+    width:340px;
+    border-radius: 35px;
+    background-color: #ecf0f3;
+    box-shadow: -8px -8px 8px #feffff, 8px 8px 8px #161b1d2f;
+    /* box-shadow: -5px -5px 5px #feffff, 5px 5px 5px #161b1d2f; */
+    /* box-shadow: inset 5px 5px 5px #cbced1,
+        inset -5px -5px 5px #ffffff; */
+    
+}
+
+.wrapper .tabs ul{
+  width: 100%;
+  margin-bottom:30px;
+  box-shadow: 2px 2px 5px #babecc,
+              -5px -5px 10px #ffffff73;
+  display: flex;
+}
+        
+
+.wrapper .tabs ul li{
+  width: 50%;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.wrapper .tabs ul li.active{
+  background: #dde1e7;
+  color: rgb(0, 0, 0);
+  box-shadow: inset 2px 2px 5px #babecc,
+              inset -5px -5px 10px #ffffff73;
+}
+
+.wrapper .input_field{
+  margin-bottom: 25px;
+}
+
+.wrapper .input_field .input{
+  width: 100%;
+  border: none;
+  background: #dde1e7;
+  color: black;
+  font-family: sans-serif;
+  box-shadow: inset 2px 2px 5px #babecc,
+              inset -5px -5px 10px #ffffff73;
+  font-size: 14px;
+  padding: 17px;
+  border-radius: 10px;
+} 
+
+.wrapper .btn{
+  margin-top: 30px;
+  background: #dde1e7;
+  box-shadow: 2px 2px 5px #babecc,
+              -5px -5px 10px #ffffff73;
+  padding: 12px;
+  text-align: center;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.wrapper .btn:hover{
+  color:black;
+  box-shadow: inset 2px 2px 5px #babecc,
+              inset -5px -5px 10px #ffffff73;
+              transition: .5s;
+}
+.wrapper .btn a{
+  color: rgb(0, 0, 0);
+  display: block;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.icon-button{
+  margin-top: 50px;
+}
+.icon-button span{
+  margin-left: 20px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 15px;
+  padding-bottom: 6px;
+   
+ border-radius: 5px;
+  line-height: 30px;
+  
+  background: #dde1e7;
+  box-shadow: 2px 2px 5px #babecc,
+              -5px -5px 10px #ffffff73;
+   
+}
+.icon-button span:hover{
+  color:black;
+  box-shadow: inset 2px 2px 5px #babecc,
+              inset -5px -5px 10px #ffffff73;
+}
+.icon-button span i{
+  font-size: 25px;
+   
+}
