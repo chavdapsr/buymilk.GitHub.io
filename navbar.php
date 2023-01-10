@@ -13,32 +13,30 @@
           <!-- Designing by psr -->
 
 <body>
-<nav class="nav">
-    <div class="container">
-        <div class="logo">
-            <a href="home.php">buymilk</a>
-        </div>
-        <div class="main_list" id="mainListDiv">
-            <ul>
-                <li><a href="cart.php">shop</a></li>
-                <li><a href="about.php">about</a></li>
-                <li><a href="contact.php">contact</a></li>
-                <li><a href="login.php">login</a></li>
-                <li><a href="register.php">signup</a></li>
-                <li><a href="profile.php">profile</a></li>
-            </ul>
-        </div>
-        <div class="media_button">
-            <button class="main_media_button" id="mediaButton">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+<nav>
+    <div class="menu">
+      <input type="checkbox" id="check">
+      <div class="logo"><a href="#">buymilk</a></div>
+        <ul>
+          <label class="btn cancel" for="check"><i class="fas fa-times"></i></label>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+        <label for="check" class="btn bars"><i class="fas fa-bars"></i></label>
+      </div>
     </div>
-</nav>
-    
-<section class="home"></section>
+  </nav>
+  <div class="center">
+    <div class="upper">
+      Responsive Neumorphism Navigation Bar
+    </div>
+    <div class="lower">
+    Using HTML and CSS Only
+    </div>
+  </div>
 <!-- partial -->
  <script>
 var mainListDiv = document.getElementById("mainListDiv"),
