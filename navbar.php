@@ -1,13 +1,13 @@
  
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
     <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" http-equiv="Content-Type" content="width=device-width, initial-scale=1.0" />
+   <meta name="viewport" content="width=device-width, initial-      scale=1.0">
     <title>navbar</title>
     <link rel="stylesheet" href="style.css">
-
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
 
           <!-- Designing by psr -->
@@ -16,14 +16,19 @@
 <nav>
     <div class="menu">
       <input type="checkbox" id="check">
-      <div class="logo"><a href="#">buymilk</a></div>
-        <ul>
+        <div class="logo">
+            <a href="home.php">buymilk</a>
+        </div>
+           <ul>
           <label class="btn cancel" for="check"><i class="fas fa-times"></i></label>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Login</a></li>
+          <li><a href="home.php">Home</a></li>
+          <li><a href="cart.php">Cart</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="login.php">Login</a></li>
+          <li><a href="signup.php">Signup</a></li>
+          <li><a href="profile.php">Profile</a></li>
+          <li><a href="wallet.php">Wallet</a></li>
         </ul>
         <label for="check" class="btn bars"><i class="fas fa-bars"></i></label>
       </div>
@@ -31,26 +36,12 @@
   </nav>
   <div class="center">
     <div class="upper">
-      Responsive Neumorphism Navigation Bar
+      this is home page
     </div>
     <div class="lower">
-    Using HTML and CSS Only
+    responsive menubar
     </div>
   </div>
-<!-- partial -->
- <script>
-var mainListDiv = document.getElementById("mainListDiv"),
-    mediaButton = document.getElementById("mediaButton");
 
-mediaButton.onclick = function () {
-    
-    "use strict";
-    
-    mainListDiv.classList.toggle("show_list");
-    mediaButton.classList.toggle("active");
-    
-};
-
- </script>
 </body>
 </html>
