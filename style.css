@@ -1,12 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+﻿/* ========== Google Fonts =========== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* ========== CSS Variables =========== */
+:root {
+  --primary-color: #f94a3d;
+  --yellow-color: #ffcf03;
+  --black-color: #212244;
+  --default-color: #69697b;
+  --deep-yellow: #ff9401;
+  --yellow-color-1: #ffe507;
+  --red-color-1: #e83b2e;
+  --red-color-2: #ee3e32;
+  --light-red-color: #fdecec;
+  --grey-color: #eaeaea;
+  --grey-color-1: #f8f8f8;
+  --white-color: #fff;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
+  border: none;
+  outline: none;
 }
+
+*{
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.4s;
+    box-sizing: border-box;
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  }
+@import url('https://fonts.googleapis.com/css?family=Lobster');  
+a, h1, h2{  
+  font-family:Lobster; 
+}
+
+html {
+  
+  margin: 0;
+  padding:0;
+ 
+}
+
 body{
   background: #ecf0f3;
+  margin: 0;
+  padding:0;
 }
 nav{
   width: 100%;

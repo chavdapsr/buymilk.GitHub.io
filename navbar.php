@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-      scale=1.0">
-    <title>navbar</title>
+    <title>buymilk</title>
     <link rel="stylesheet" href="style.css">
+    <link type="text/css" href="vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+<!-- Pixel CSS -->
+<link type="text/css" href="css/neumorphism.css" rel="stylesheet">
+
+    <link type="text/css" href="stylesheet/scss/neumorphism.scss" rel="stylesheet">
+<link type="text/css" href="stylesheet/scss/styles.scss" rel="stylesheet">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
 
@@ -34,14 +41,6 @@
       </div>
     </div>
   </nav>
-  <div class="center">
-    <div class="upper">
-      this is home page
-    </div>
-    <div class="lower">
-    responsive menubar
-    </div>
-  </div>
-
+  
 </body>
 </html>
